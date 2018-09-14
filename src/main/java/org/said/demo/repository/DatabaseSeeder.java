@@ -26,10 +26,10 @@ public class DatabaseSeeder implements CommandLineRunner {
         logger.info("Populting database....");
         List<Student> students = new ArrayList<>();
 
-        students.add(new Student("marwa", "marwa@gmail.com","2002001"));
+        students.add(new Student("marianne", "marianne@gmail.com","2002001"));
         students.add(new Student("karim","karim@gmail.com", "9042005"));
-        students.add(new Student("Nora", "nora@gmail.com","1472009"));
-        students.add(new Student("safwane","safwane@gmail.com", "20102202"));
+        students.add(new Student("Noah", "noah@gmail.com","1472009"));
+        students.add(new Student("samuel","samuel@gmail.com", "20102202"));
 
         studentRepository.save(students);
     }
