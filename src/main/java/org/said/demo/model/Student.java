@@ -1,4 +1,4 @@
-package org.said.demo;
+package org.said.demo.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,10 +14,12 @@ public class Student {
     @GeneratedValue
     private Long id;
     private String name;
+    private String email;
     private String passportNumber;
 
-    public Student(String name, String passportNumber) {
+    public Student(String name, String email, String passportNumber) {
         this.name = name;
+        this.email=email;
         this.passportNumber = passportNumber;
     }
 
@@ -32,12 +34,20 @@ public class Student {
         return name;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
     public String getPassportNumber() {
         return passportNumber;
     }
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public void setPassportNumber(String passportNumber) {

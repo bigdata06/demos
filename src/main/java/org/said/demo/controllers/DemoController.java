@@ -1,4 +1,4 @@
-package org.said.demo;
+package org.said.demo.controllers;
 
 import org.said.modelStuff.DummyUser;
 import org.said.services.UserService;
