@@ -88,9 +88,9 @@ public class Person
                         Person.Sex.MALE, "bob@example.com"));
         roster.add(
                 new Person(
-                        "Djamel",
+                        "Leila",
                         IsoChronology.INSTANCE.date(1998, 9, 12),
-                        Person.Sex.MALE, "Djamel@example.com"));
+                        Person.Sex.MALE, "Leila@example.com"));
 
         return roster;
     }
